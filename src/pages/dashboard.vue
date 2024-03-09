@@ -1,33 +1,10 @@
+<script setup>
+import adminLayout from '../layouts/AdminLayout.vue'
+</script>
 <template>
-    
-     
-        <v-navigation-drawer
-          expand-on-hover
-          rail
-          color="red-accent-1"
-        >
-          <v-list>
-            <v-list-item
-              prepend-avatar="https://randomuser.me/api/portraits/women/85.jpg"
-              title="Sandra Adams"
-              subtitle="sandra_a88@gmailcom"
-            ></v-list-item>
-          </v-list>
-  
-          <v-divider></v-divider>
-  
-          <v-list density="compact" nav>
-            <v-list-item prepend-icon="mdi-widgets" title="Dashboard" value="dashboard"></v-list-item>
-            <v-list-item prepend-icon="mdi-account-multiple" title="Profiling" value="profiling"></v-list-item>
-            <v-list-item prepend-icon="mdi-calendar" title="Attendance Tracking" value="attendance"></v-list-item>
-            <v-list-item prepend-icon="mdi-gavel" title="Monitoring" value="monitoring"></v-list-item>
-            <v-list-item prepend-icon="mdi-heart" title="Health Visit" value="health_visit"></v-list-item>
-            <v-list-item prepend-icon="mdi-file" title="Reports" value="reports></v-list-item"></v-list-item>
-          </v-list>
-        </v-navigation-drawer>
-  
-        <v-main >
-            <v-container>
+    <adminLayout/>
+    <v-main>
+        <v-container>
                 <v-row>
                     <h1>Dashboard</h1>
                     
@@ -262,23 +239,13 @@
                     
                     </v-card>
                 </v-row>
-            </v-container>
-
-            
-        </v-main>
-   
-  </template>
-<style>
-.border-color{
-    border: 2px solid #ff8a80 !important;
-}
-.v-card-item{
-    background-color: #ff8a80 !important;
-}
-</style>
-  <script>
+    </v-container> 
+    </v-main>
+     
+</template>
+<script>
   export default {
-    data () {
+ data () {
       return {
         desserts: [
           {
